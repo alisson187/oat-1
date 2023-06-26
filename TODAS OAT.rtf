@@ -1,0 +1,356 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red0\green0\blue0;\red0\green176\blue80;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\qc\lang22\f0\fs56 OAT 1\fs22\par
+\cf1\fs36 ALISSON MICHEL DE SOUSA ARAUJO\par
+\pard\sa200\sl276\slmult1\cf2 EXERCICIOS SLIDE 1\par
+\cf3 Quest\'e3o 1\cf2 : Qual a diferen\'e7a entre Polimorfismo, Heran\'e7a, Encapsulamento e Abstra\'e7\'e3o?\par
+\cf1\fs28 Polimorfismo: \cf2 Significa \ldblquote v\'e1rias formas\rdblquote , que \'e9 um termo designado a objetos de classes distintas, que podem reagir de uma maneira diferente ao fazerem o uso de um mesmo m\'e9todo. Na OO voc\'ea pode enviar uma mesma mensagem para diferentes objetos e faz\'ea-los responder da maneira correta. Portanto o polimorfismo \'e9 um dos respons\'e1veis pela especializa\'e7\'e3o de classes em uma aplica\'e7\'e3o OO, pois comportamentos definidos, mas n\'e3o implementados nas classes mais gen\'e9ricas, ser\'e3o implementados nas novas subclasses.\par
+\cf1 Heran\'e7a:\cf2  E um termo que se refere a uma classe nova, que pode ser criada a partir de outra existente. Ela pode \ldblquote herdar atributos e comportamentos da classe a ser estendida.\par
+\cf1 Encapsulamento:\cf2  E um mecanismo que trata de dar seguran\'e7a aos objetos, mantendo-os controlados em rela\'e7\'e3o ao seu n\'edvel de acesso. \'c9 o processo de ocultar ou esconder os membros de uma classe do acesso exterior usando modificadores de acesso. Desta maneira, o encapsulamento contribui fundamentalmente para diminuir os malef\'edcios causados pela interfer\'eancia externa sobre os dados, pois isola partes do c\'f3digo. Isso reduz o acoplamento, que mede o quanto um elemento depende e conhece o outro.\par
+\cf1 Abstra\'e7\'e3o:\cf2  Nada mais \'e9 que a habilidade de modelar caracter\'edsticas do mundo real, de um denominado problema em quest\'e3o que o programador esteja tentando resolver, e determinar como estas caracter\'edsticas ir\'e3o atuar ao receber informa\'e7\'f5es.\par
+\cf3\fs36 Quest\'e3o 2\cf2 : O que \'e9 Associa\'e7\'e3o, Agrega\'e7\'e3o, Composi\'e7\'e3o e Generaliza\'e7\'e3o?\par
+\cf1\fs28 Associa\'e7\'e3o:\cf2  A Associa\'e7\'e3o representa a rela\'e7\'e3o existente entre objetos. Ela descreve o v\'ednculo entre duas classes e geralmente determina que as inst\'e2ncias de uma classe est\'e3o de alguma forma ligadas \'e0s inst\'e2ncias da outra classe  no diagrama, sua sintaxe \'e9 uma linha que liga as duas classes que representam os objetos relacionados.\par
+\cf1 Agrega\'e7\'e3o: \cf2 Representa uma rela\'e7\'e3o todo-parte entre o agregado e suas partes,Demonstra que as informa\'e7\'f5es de um objeto precisam ser complementadas por um objeto de outras classes. Nessa rela\'e7\'e3o, a perda do todo n\'e3o resulta, obrigatoriamente, na perda das partes. Sua sintaxe \'e9 uma linha com um losango branco na classe que corresponde ao todo.\par
+\cf1 Composi\'e7\'e3o\cf2 : Tamb\'e9m representa uma rela\'e7\'e3o todo-parte entre o agregado e suas partes. Representa um v\'ednculo mais forte entre objetos-todo e objetos-parte. Objetos-parte t\'eam que pertencer ao objeto-todo. A composi\'e7\'e3o representa um forte relacionamento, em que as partes n\'e3o sobrevivem sem o todo. Sua sintaxe \'e9 a de uma linha com um losango preto na classe que corresponde ao todo.\par
+\cf1 Generaliza\'e7\'e3o\cf2  / \cf1 Especializa\'e7\'e3o\cf2 : Representa a rela\'e7\'e3o existente entre classes, este relacionamento tamb\'e9m \'e9 conhecido na orienta\'e7\'e3o a objetos como heran\'e7a. \'c9 identificar super-classe (geral) e sub-classes (especializadas). \'c9 quando existe a necessidade de criar uma classe que herde as propriedades de outra classe, isto \'e9, os atributos, m\'e9todos e tamb\'e9m relacionamentos (associa\'e7\'f5es) da classe superior. Os atributos e m\'e9todos definidos na classe-m\'e3e s\'e3o herdados pelas classes filhas.\par
+\cf1 ===================================================================================\cf2\par
+\fs36 EXERCICIOS SLIDE 2\par
+\cf3 Quest\'e3o 1:\cf2  Crie uma classe de nome Carro e atribua a ela todas as propriedades que voc\'ea acredita que um carro possua. Instancie a classe Carro e preencha 3 objetos distintos. Imprima na tela do usu\'e1rio todos os atributos dos tr\'eas carros.\par
+\fs24 Class Carro\par
+\{\par
+  public int codigCarro \{ get; set; \}\par
+  public string nome \{ get; set; \}\par
+  public string cor \{ get; set; \}\par
+  public int ano \{ get; set ;\}\par
+  public string modelo \{ get; set; \}\par
+  public string marca \{ get; set; \}\par
+\par
+\}\par
+\par
+ static void Main(string[] args)\par
+\{\par
+     objCarro.codigCarro = 1,\par
+     objCarro.nome = "opala",\par
+     objCarro.cor = "vinho",\par
+     objCarro.ano = 1992,\par
+     objCarro.modelo = "diplomata",\par
+     objCarro.marca = "chevrollet",\par
+\par
+     objCarro.codigCarro = 2,\par
+     objCarro.nome = "fusca",\par
+     objCarro.cor = "branco",\par
+     objCarro.ano = 1980,\par
+     objCarro.modelo = "hatch",\par
+     objCarro.marca = "volkswagem",\par
+\par
+     objCarro.codigCarro = 3,\par
+     objCarro.nome = "del rey",\par
+     objCarro.cor = "prata",\par
+     objCarro.ano = 1991,\par
+     objCarro.modelo = "sedan",\par
+     objCarro.marca = "ford",\par
+\}\par
+\par
+ var listaRetorno = getProperityValues(objCarro);\par
+ \par
+ forech (var item in listaRetorno)\par
+\{\par
+   Console.WriteLine(item.Value.ToString());\par
+\}\par
+\par
+ Console.WriteLine("=======================");\par
+\par
+ var listaRetorno2 = getPropertyValues(objCarro2);\par
+\par
+ foreach (var item in listaRetorno2)\par
+\{\par
+  Console.WriteLine(item.Value.ToString());\par
+\}\par
+\par
+ Console.WriteLine("========================");\par
+\par
+ var listaRetorno3 = getPropertyValues(objCarro3);\par
+\par
+ foreach (var item in listaretorno3)\par
+\{\par
+  Console.WriteLine(item.Value.ToString());\par
+\}\par
+ \par
+ Console.WriteLine("========================")\par
+\par
+ public static Dictionary<string, objetc> getPropertyValues(object 0)         \par
+\par
+\{\par
+    Dictionary<string, object> propertyValues = new Dictionary<string, object>();\par
+    Type ObjectType = 0.Get Type();\par
+    foreach (System.Reflection.PropertyInfo property in properties)\par
+    \{\par
+       propertyValue.Add(property.Name, property.GetValues(0, null));\par
+ \}\par
+     \par
+    return propertyValues;\par
+  \}\fs28\par
+\cf3\fs36 Quest\'e3o 2:\cf2  Pesquise como um criar um m\'e9todo espec\'edfico dentro de uma classe em C#. Crie dois m\'e9todos para a classe Carro criada na quest\'e3o anterior. Um m\'e9todo chamado Acelerar(), que retorna a string \ldblquote O carro est\'e1 em movimento\rdblquote  como resposta e outro m\'e9todo Freiar() que tamb\'e9m retorna uma string \ldblquote O carro est\'e1 parado\rdblquote  como resposta.\par
+\fs24 namespace MeuPrimeioProgeto\par
+\par
+public class carro\par
+\{\par
+    public static void Main(string[] args)\par
+    \{\par
+       acelerar();\par
+       frear();\par
+    \}\par
+    static void acelerar()\par
+    \{\par
+        Console.WriteLine("O CARRO ESTA EM MOVIMENTO");\par
+    \}\par
+    static void frear()\par
+    \{\par
+        Console.WriteLine("O CARRO ESTA PARADO");\par
+    \}\par
+\}\par
+\cf1 ================================================================================================\cf2\par
+\fs36 EXERCICIOS  SLIDE 3\par
+\cf3 Quest\'e3o 1:\cf2  Quais s\'e3o os benef\'edcios de se criar um diagrama de classes?\par
+\cf1\fs28 1\cf2 : Ilustrar modelos de dados para sitemas de informa\'e7ao, nao importa qu\'e3o simples ou complexo seja.\par
+\cf1 2\cf2 : Entende melhor a vis\'e3o geral dos esquemas de uma aplica\'e7\'e3o.\par
+\cf1 3\cf2 : Expressa visualmente as necessidades especificas de um sistema e divulga essas informa\'e7\'f5es por toda a empresa.\par
+\cf1 4\cf2 : Cria graficos detalhados que destacam qualquer codigo especifico necessario para ser programado e implementado na estrutura descrita.\par
+\cf1 5\cf2 : Fornecer uma descri\'e7\'e3o independente de implementa\'e7\'e3o de tipos ultilizados em um sistema e passados posteriormente estre seus componentes.\fs36\par
+\par
+\cf3 Quest\'e3o 2:\cf2  O que \'e9 um array e como \'e9 a sua implementa\'e7\'e3o?\par
+\fs28 Um array e um conjunto de elementos de um mesmo tipo de dados onde cada elemento do conjunto e acessado pela posi\'e7\'e3o no array que e dada atraves de um indice, uma sequencia de numeros inteiros, uma array de uma dimen\'e7ao e tambem conhecido como um vetor, e um array de mais de uma dimen\'e7\'e3o e conhecido como uma matriz.\par
+\cf1 ===================================================================================\par
+\cf2\fs36 EXERCICIOS SLIDE 4\par
+Quest\'e3o 1: Fa\'e7a um programa em C# (com a estrutura do...while) que leia 20 valores inteiros e:\par
+- Encontre e mostre o maior valor;\par
+- Encontre e mostre o menor valor;\par
+- Calcule e mostre a m\'e9dia dos n\'fameros lidos;\par
+\fs28  static void Main(string[] args)\par
+        \{\par
+            int cont = 1;\par
+            int maior = 0;\par
+            int menor = 0;\par
+            int soma = 0;\par
+           \par
+            while (cont <= 20)\par
+\par
+            \{\par
+                Console.Write("DIGITE UM VALOR ");\par
+                int valor = int.Parse(Console.ReadLine());\par
+                cont++;\par
+                soma += valor;\par
+\par
+                if (valor > maior)\par
+                \{\par
+                    maior = valor;\par
+               \par
+                \}\par
+                if (valor < menor)\par
+                \{\par
+                    menor = valor;\par
+                    \par
+                \}\par
+         \}\par
+            double media = (double) soma / 20;\par
+            Console.WriteLine("O MAIOR VALOR E " + maior);\par
+            Console.WriteLine("O MENOR VALOR E " + menor);\par
+            Console.WriteLine("A SOMA DOS VALORES DIGITADOS E "+ soma);\par
+            Console.WriteLine("A MEDIA DOS VALORES E " + media);\par
+\fs36\par
+Quest\'e3o 2: Fa\'e7a o seguinte programa em C#. Uma loja utiliza o c\'f3digo V para compras \'e0\par
+vista e o c\'f3digo P para compras a prazo. Fa\'e7a um algoritmo que recebe ao c\'f3digo (V ou P)\par
+e o valor de 15 transa\'e7\'f5es. Calcule e mostre:\par
+- O valor total das compras \'e0 vista.\par
+- O valor total das compras a prazo.\par
+- O valor total das compras efetuadas.\par
+\fs28  static void Main(string[] args)\par
+        \{ \par
+            double total_vista = 0;\par
+            double total_prazo = 0;\par
+            double total_compras = 0;\par
+\par
+           for (int cont = 1; cont <= 15; cont ++)\par
+            \{\par
+                Console.Write("DIGITE O CODIGO DA TRANSA\'c7AO ", cont);\par
+                string codigo = Console.ReadLine();\par
+                Console.Write("DIGITE O VALOR DA TRANSA\'c7AO ");\par
+                double valor = double.Parse(Console.ReadLine());\par
+\par
+                if (codigo == "v")\par
+                \{\par
+                    total_vista += valor;\par
+                \}\par
+                else if (codigo == "p")\par
+                \{\par
+                    total_prazo += valor;\par
+                \}\par
+                total_compras = total_vista + total_prazo;\par
+            \par
+                \par
+            \}\par
+            Console.WriteLine("=================================================");\par
+            Console.WriteLine("O TOTAL DAS COMPRAS A VISTA E " + total_vista);\par
+            Console.WriteLine("O TOTAL DAS COMPRAS A PRAZO E " + total_prazo);\par
+            Console.WriteLine("O TOAL DAS COMPRAS EFETUADAS FOI " + total_compras);\par
+            Console.WriteLine("=================================================");\par
+        \}\par
+\fs36\par
+Quest\'e3o 3: Fa\'e7a o seguinte programa em C#. A prefeitura de Luzi\'e2nia fez uma pesquisa com 200 pessoas, coletando dados sobre o sal\'e1rio e o n\'famero de filhos. A prefeitura deseja saber:\par
+- A m\'e9dia do sal\'e1rio dessas pessoas.\par
+- A m\'e9dia do n\'famero de filhos.\par
+- O maior sal\'e1rio.\par
+- O menor sal\'e1rio.\par
+- A porcentagem de pessoas com sal\'e1rios at\'e9 R$1500,00\par
+\par
+\fs28   static void Main(string[] args)\par
+        \{\par
+              double media_salario = 0;\par
+              double media_filhos = 0;\par
+              double maior = 0;\par
+              double menor = 0;\par
+              double total = 0;\par
+             for (int cont = 1; cont <= 200; cont++)\par
+            \{\par
+                Console.WriteLine("FAMILIA NUMERO " + cont);\par
+                Console.WriteLine("=======================");\par
+                Console.Write("QUAL O SALARIO DA FAMILIA NUMERO = ");\par
+                double salario = double.Parse(Console.ReadLine()); \par
+                Console.Write("QUAL O NUMEROS DE FILHOS DA FAMILIA NUMERO = " );\par
+                int filhos = int.Parse(Console.ReadLine());\par
+                Console.WriteLine("====================================================");\par
+\par
+                media_salario += salario / cont;\par
+                media_filhos += filhos / cont;\par
+                if (salario > maior)\par
+                \{\par
+                    maior = salario;\par
+                \}\par
+                if (salario < menor)\par
+                \{\par
+                    menor = salario;\par
+                \}\par
+                if (salario <= 1.500)\par
+                \{\par
+                    total += total % cont; \par
+                \}\par
+               \par
+            \}\par
+             Console.WriteLine("=====================================================");\par
+             Console.WriteLine("A MEDIA DO SALARIO DESSAS PESSOAS E " + media_salario);\par
+             Console.WriteLine("A MEDIA DO NUMEROS DE FILHOS E " + media_filhos);\par
+             Console.WriteLine("O MAIOR SALARIO E " + maior);\par
+             Console.WriteLine("O MENOR SALARIO E " + menor);\par
+             Console.WriteLine("A PORCENTAGEM DE PESSOAS QUE GANHAM ATE 1.500 E " + total);\par
+             Console.WriteLine("======================================================");\par
+\cf1 ======================================================================================\par
+\cf0\fs44 exercicios slide 5\par
+\fs32 Quest\'e3o 3: Escreva um programa em C# que dever\'e1 ter as seguintes op\'e7\'f5es:\par
+- Carregar Vetor.\par
+- Listar Vetor.\par
+- Exibir apenas os n\'fameros pares do vetor.\par
+- Exibir apenas os n\'fameros \'edmpares do vetor.\par
+- Exibir a quantidade de n\'fameros pares existentes nas posi\'e7\'f5es \'edmpares do vetor.\par
+- Exibir a quantidade de n\'fameros \'edmpares existentes nas posi\'e7\'f5es pares do vetor.\par
+- Sair\par
+Observa\'e7\'e3o: Dever\'e1 ser implementado um m\'e9todo para realizar cada uma das op\'e7\'f5es\par
+acima.\par
+\par
+   int opcao;\par
+\par
+        do \{\par
+            Console.WriteLine("========== MENU ==========");\par
+            Console.WriteLine("1 - Carregar Vetor");\par
+            Console.WriteLine("2 - Listar Vetor");\par
+            Console.WriteLine("3 - Exibir apenas os n\'fameros pares do vetor");\par
+            Console.WriteLine("4 - Exibir apenas os n\'fameros \'edmpares do vetor");\par
+            Console.WriteLine("5 - Exibir a quantidade de n\'fameros pares nas posi\'e7\'f5es \'edmpares do vetor");\par
+            Console.WriteLine("0 - Sair");\par
+            Console.WriteLine("==========================");\par
+            Console.Write("Digite a op\'e7\'e3o desejada: ");\par
+            opcao = int.Parse(Console.ReadLine());\par
+\par
+            switch (opcao) \{\par
+                case 1:\par
+                    CarregarVetor();\par
+                    break;\par
+                case 2:\par
+                    ListarVetor();\par
+                    break;\par
+                case 3:\par
+                    ExibirPares();\par
+                    break;\par
+                case 4:\par
+                    ExibirImpares();\par
+                    break;\par
+                case 5:\par
+                    ContarParesPosicoesImpares();\par
+                    break;\par
+                case 0:\par
+                    Console.WriteLine("Programa encerrado.");\par
+                    break;\par
+                default:\par
+                    Console.WriteLine("Op\'e7\'e3o inv\'e1lida. Tente novamente.");\par
+                    break;\par
+            \}\par
+\par
+            Console.WriteLine();\par
+        \} while (opcao != 0);\par
+    \}\par
+\par
+    static void CarregarVetor() \{\par
+        Console.WriteLine("Digite os n\'fameros inteiros positivos (-1 para sair):");\par
+\par
+        int numero;\par
+        do \{\par
+            numero = int.Parse(Console.ReadLine());\par
+            if (numero != -1) \{\par
+                vetor[tamanhoVetor] = numero;\par
+                tamanhoVetor++;\par
+            \}\par
+        \} while (numero != -1);\par
+\par
+        Console.WriteLine("Vetor carregado com sucesso.");\par
+    \}\par
+\par
+    static void ListarVetor() \{\par
+        Console.WriteLine("Vetor:");\par
+\par
+        for (int i = 0; i < tamanhoVetor; i++) \{\par
+            Console.WriteLine(vetor[i]);\par
+        \}\par
+    \}\par
+\par
+    static void ExibirPares() \{\par
+        Console.WriteLine("N\'fameros pares do vetor:");\par
+\par
+        for (int i = 0; i < tamanhoVetor; i++) \{\par
+            if (vetor[i] % 2 == 0) \{\par
+                Console.WriteLine(vetor[i]);\par
+            \}\par
+        \}\par
+    \}\par
+\par
+    static void ExibirImpares() \{\par
+        Console.WriteLine("N\'fameros \'edmpares do vetor:");\par
+\par
+        for (int i = 0; i < tamanhoVetor; i++) \{\par
+            if (vetor[i] % 2 != 0) \{\par
+                Console.WriteLine(vetor[i]);\par
+            \}\par
+        \}\par
+    \}\par
+\par
+    static void ContarParesPosicoesImpares() \{\par
+        int contador = 0;\par
+\par
+        for (int i = 1; i < tamanhoVetor; i += 2) \{\par
+            if (vetor[i] % 2 == 0) \{\par
+                contador++;\par
+            \}\par
+        \}\par
+\par
+        Console.WriteLine("Quantidade de n\'fameros pares nas posi\'e7\'f5es \'edmpares do vetor: " + contador);\cf2\fs28\par
+\cf0\fs22\par
+}
+ 
